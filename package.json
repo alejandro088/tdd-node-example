@@ -3,10 +3,8 @@
   "description": "A demo app illustrating the usage of express, mongoose, passportjs, pug and other modules in nodejs",
   "keywords": [
     "express",
-    "mongoose",
-    "mongodb",
-    "passport",
-    "demo"
+    "node",
+    "tdd"
   ],
   "version": "4.0.0",
   "private": false,
