@@ -20,7 +20,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "debug": "nodemon --debug server.js",
-    "test": "mocha tests/ --recursive --exec babel-node --exit",
+    "test": "mocha test/ --recursive --exec babel-node --exit",
     "pretest": "eslint ."
   },
   "dependencies": {
