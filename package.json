@@ -20,8 +20,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "debug": "nodemon --debug server.js",
-    "test": "mocha tests/ --recursive --exec babel-node --exit",
-    "pretest": "eslint ."
+    "test": "mocha test/ --recursive --exec babel-node --exit"
   },
   "dependencies": {
     "body-parser": "~1.19.0",

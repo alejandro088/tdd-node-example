@@ -20,6 +20,26 @@ module.exports = function(app) {
   // home route
   app.get('/', home.index);
 
+  // add task
+  app.post('/tasks', function(req, res) {
+    
+    if (!req.body.title) {
+      res.status(500).json({error: 'title does not exists!'});
+    } else if (!req.body.description) {
+      res.status(500).json({error: 'description does not exists!'});
+    } else {
+
+    res.status(201).json({
+      id: 1,
+      title:  req.body.title,
+      description: req.body.description,
+      status: 'to do',
+      created_at: '24/08/2020',
+      updated_at: '24/08/2020'
+    });
+  }
+  });
+
 
   /**
    * Error handling
